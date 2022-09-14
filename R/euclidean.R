@@ -11,4 +11,5 @@ euclidean <- function(a, b) {
   return(one)
 }
 
-euclidean(20, 8)
+euclidean(123612, 13892347912)
+euclidean(100, 1000)
