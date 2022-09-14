@@ -1,5 +1,8 @@
-print("euclidean")
 euclidean <- function(a, b) {
+  is.scalar <- function(s) is.atomic(s) && length(s) == 1L
+  if (!is.numeric(a) | !is.numeric(b) | !is.scalar(a) | !is.scalar(b)) {
+    return("Please enter numeric value")
+  }
   one <- a;
   two <- b;
 
