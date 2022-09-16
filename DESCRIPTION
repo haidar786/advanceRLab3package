@@ -9,3 +9,11 @@ Description: More about what it does (maybe more than one line)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Suggests:
+    testthat
+Config/testthat/edition: 3
+depends:
+  R(>= 3.5.0)
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
