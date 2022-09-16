@@ -1,38 +1,16 @@
 dijkstra <- function(graph, init_node) {
-  is.scalar <- function(s) is.atomic(s) && length(s) == 1L
-  if (!is.data.frame(graph) | !is.numeric(init_node) | !is.scalar(init_node) | !init_node %in% graph[,1]) {
-    return("Please enter the right data arguments")
+  uniqueNodes <- unique(graph[,1])
+  uniqueNodesGraph <- as.data.frame(uniqueNodes)
+  for (i in seq(1,length(uniqueNodes))) {
+    uniqueNodesGraph$distance[i] <- Inf
+    uniqueNodesGraph$prev[i] <- NA
   }
+  uniqueNodesGraph[,2][init_node] <- 0
+  while (length(uniqueNodes) > 0) {
 
-  if (!"v1" %in% colnames(graph) | !"v2" %in% colnames(graph) | !"w" %in% colnames(graph)) {
-    return("Please enter column names as v1, v2, w respectively")
-  }
-  if (length(graph[,1]) != length(graph[,3]) | length(graph[,2]) != length(graph[,3])) {
-    return("Please enter the all edges")
-  }
-  dist <- c()
-  prev <- c()
-  Q <- c()
-  for (index in seq(1, length(graph[,1]))) {
-    dist[index] <- Inf
-    prev[index] <- NA
-    Q[index] <- graph[,1][index]
-  }
-
-  dist[init_node] <- 0
-  u <- min(dist)
-  while (length(Q) > 0) {
-    shortestIndex <- which.min(graph[,3])
-    u <- Q[shortestIndex]
-    Q <- Q[-shortestIndex]
-    nearest<-graph[graph[['v1']]==u,'v2']
-    print(shortestIndex)
-    print(u)
-    print(nearest)
+    neighbers <- graph[,2][1:3]
+    print(neighbers)
     stop()
-    for (i in Q) {
-
-    }
   }
 }
 
