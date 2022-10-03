@@ -1,5 +1,4 @@
 #' Euclidean algorithm is used to find greatest common divisor
-#'
 #' @param a This argument is a numeric only value argument as a first value to find the euclidean
 #' @param b This is a second argument with only numeric value to find the euclidean
 #' @return  This return the euclidean final result

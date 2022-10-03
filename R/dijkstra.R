@@ -1,5 +1,4 @@
 #' Dijkstra algorithm is used to find the shortest path find. It is the one of great algorithm in computer science to find the shortest path.
-#'
 #' @param graph First argument data frame contains nodes in two vectors v1 and v2 and also the distance between those nodes in w vector
 #' @param init_node This second argument contains the initial node of the tree. The starting point to find the shortest path using Dijkstra algorithm.
 #' @return  This return function returns the vector of the shortest paths of nodes sequentially.
