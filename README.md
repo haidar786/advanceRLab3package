@@ -1,6 +1,6 @@
- <!-- badges: start -->
-  [![C-MD-CHECK](https://github.com/r-lib/actions/workflows/r/badge.svg)](https://github.com/r-lib/actions/actions?workflow=r)
-  <!-- badges: end -->
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/haidar786/advanceRLab3package/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/haidar786/advanceRLab3package/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 # advanceRLab3package
 advance r lab 3 package
